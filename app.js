@@ -251,13 +251,13 @@ let b=5;
 // }
 
 
-let number = + prompt("Enter any number for table:")
+// let number = + prompt("Enter any number for table:")
 
-for(let i=1;        i <=10;     i++){
-// 4 X 1 = 4    
-// console.log(number + " X " + i +" = "+ number*i); // Concatenation
-console.log(`${number} X ${i} = ${number * i}`);//Interpolation
-}
+// for(let i=1;        i <=10;     i++){
+// // 4 X 1 = 4    
+// // console.log(number + " X " + i +" = "+ number*i); // Concatenation
+// console.log(`${number} X ${i} = ${number * i}`);//Interpolation
+// }
 
 
 //using while loop print  even number if number is even and odd number if number is odd
@@ -359,32 +359,78 @@ console.log(`${number} X ${i} = ${number * i}`);//Interpolation
 
 
 //functions
+
+
 //defining a function
+
 // function greet(){
+
+//     console.log("Hello world haris")
 //     console.log("Hello world")
+//     console.log("Hello world")
+
 // }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 //invoke / call
 // greet();
+// greet();
+
+
+
+// function add(){
+// console.log(10+20)
+// }
+
+// add();
+// add();
+
+
+//parameters
+
+//default parameters
+// function add(a=0,b=0){
+//     // console.log(a)
+// console.log(a+b)
+// }
+
+//arguments
+// add(5,5);
+// add(4,5);
+// add(56,44);
+
+// add();
+// add(5);
+
+
+// function greetHi(name){
+
+// // console.log("Hi "+name)
+// alert(`Hi ${name}`) // string literal/interpolation
+// }
+
+// greetHi("Haris");
+// greetHi("Faris");
+// greetHi("Shakoor");
+// greetHi("Usman");
+
+// let username = prompt("Enter your name")
+
+// greetHi(username);
+
 
 //returning function;
+
+
 // function greetHi(){
 //     return "Hi";
 // }
 
+
+// let c = greetHi();
+// console.log(greetHi()); //Hi
+// console.log(c);
 
 // let greet=greetHi();//Hi
 // console.log(greet);
@@ -415,15 +461,51 @@ console.log(`${number} X ${i} = ${number * i}`);//Interpolation
 // addition(5,5);
 
 
+
 //arrrays (collection of elements/values)
-// let students=["Ali","Ahmed","Haris","Kabeer","Shehzad"];
-// let employees=["Ali","Ahmed","Haris","Kabeer","Shehzad"];
-// let Dishes=["Biryani","Qorma","Karahi","Handi","Pulao","Kabab"];
+
+// let student1= "Ali"
+// let student2= "Ahmed"
+
+let students= [ "Ali","Ahmed","dfsd","Ali","Ahmed","dfsd","Ali","Ahmed","dfsd","Ali","Ahmed","dfsd"]; //5
+
+
+let employees=["Ali","Ahmed","Haris","Kabeer","Shehzad"];
+
+let dishes=["Biryani","Qorma","Karahi","Handi","Pulao","Kabab"];
 
 // index = 0-4
-// length = 5
+
+
+// length = 6
+// console.log(dishes)
+// console.log(dishes[4])
+// dishes[4] ="White Biryani";
+// console.log(dishes)
+// console.log(dishes[4])
+
 // console.log(students.length)
+// console.log(students[0]);
+// console.log(students[1]);
+// console.log(students[2]);
 // console.log(students[3]);
+// console.log(students[4]);
+
+for(let i=0; i < students.length; i++ ){
+
+console.log(students[i])
+}
+
+
+//create a function which take 3 parameters for numbers and give the sum and product
+// of them.
+
+// create an array of 7 wonders of world and print it using for loop
+
+
+
+
+
 // for(let i=0;i<students.length; i++){
 
 //     // document.write("Name => "+students[i] +"<br>");
