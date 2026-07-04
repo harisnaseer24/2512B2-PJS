@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+.box{
+    background-color: black;
+}
+
+
+</style>
+<body>
+<div id="mycontent" >
+
+</div>
+
+    <!-- <button id="btn" onclick="greet()">Click Me</button> -->
+    <button id="btn">Click Me</button>
+   
+    <script>
+   //Document Object Model
+
+let btn = document.getElementById("btn")
+let mydiv = document.getElementById("mycontent")   
+
+
+ function greet(){
+            // alert('Hello');
+            //   mydiv.innerHTML = ""
+            num=5;
+            num+=2; 
+            // mydiv.innerText += "<h1>DOM<h1/>"
+            mydiv.innerHTML += "<h1>DOM<h1/>"
+            // mydiv.outerHTML += "<h1>DOM<h1/>"
+
+            mydiv.style.color="red" 
+            mydiv.setAttribute("class","box")
+
+        }
+
+ 
+
+
+
+
+btn.addEventListener("click",greet)
+        
+
+
+    </script>
+</body>
+</html>

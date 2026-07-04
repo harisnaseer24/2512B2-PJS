@@ -467,12 +467,12 @@ let b=5;
 // let student1= "Ali"
 // let student2= "Ahmed"
 
-let students= [ "Ali","Ahmed","dfsd","Ali","Ahmed","dfsd","Ali","Ahmed","dfsd","Ali","Ahmed","dfsd"]; //5
+// let students= [ "Ali","Ahmed","dfsd","Ali","Ahmed","dfsd","Ali","Ahmed","dfsd","Ali","Ahmed","dfsd"]; //5
 
 
-let employees=["Ali","Ahmed","Haris","Kabeer","Shehzad"];
+// let employees=["Ali","Ahmed","Haris","Kabeer","Shehzad"];
 
-let dishes=["Biryani","Qorma","Karahi","Handi","Pulao","Kabab"];
+// let dishes=["Biryani","Qorma","Karahi","Handi","Pulao","Kabab"];
 
 // index = 0-4
 
@@ -491,10 +491,10 @@ let dishes=["Biryani","Qorma","Karahi","Handi","Pulao","Kabab"];
 // console.log(students[3]);
 // console.log(students[4]);
 
-for(let i=0; i < students.length; i++ ){
+// for(let i=0; i < students.length; i++ ){
 
-console.log(students[i])
-}
+// console.log(students[i])
+// }
 
 
 //create a function which take 3 parameters for numbers and give the sum and product
@@ -525,10 +525,11 @@ console.log(students[i])
 // let students=["Ali","Ahmed","Haris","Kabeer","Shehzad"];
 
 // push insert an element at last index of an array and returns the new length of an array
-// console.log(students.push("Javed"));
+// students.push("Javed");
+
 // console.log(students);
 
-// //pop removes an element from last index of an array and returns the removed element.
+// // //pop removes an element from last index of an array and returns the removed element.
 // console.log(students.pop());//Javed
 // console.log(students);
 
@@ -542,31 +543,56 @@ console.log(students[i])
 
 //splice
 //              start index, no of elements to be removed, elements to be inserted
+
+//insert at 3rd index
+// students.splice(3,0,"Imam")
+
+
+// students.splice(2,2)
+
+// students.splice(1,1,"Irshad","Jawad")
+
+
+
+// console.log(students)
+
 // students.splice(2               ,1                               );
 // students.splice(2               ,2           ,"Haris Naseer" ,"Owais"                 );
 // console.log(students)
-//mutable -> can be changed
-//immuatable => cannot be changed
+
+
+// mutable -> can be changed
+// immutable => cannot be changed
+
+
+let students=["Ali","Ahmed","Haris","Kabeer","Shehzad"];
 //slice
-// let goodStudents=students.slice(3,5);//start index,end length
+// let goodStudents= students.slice(3,5);//start index,end length
+
+// let goodStudents= students.slice(1,4);//start index,end length
 // console.log(goodStudents)
 // console.log(students)
 
 // let students=["Ali","Ahmed","Haris","Kabeer","Shehzad"];
 // //map
-// let respectedStudents=students.map((stud)=>{   return "Mr."+stud });
-// let lowerCaseStudents=students.map((stud)=>{   return stud.toLowerCase() });
-// console.log(respectedStudents)
+// callback
+// let respectedStudents= students.map(function (stdName){ return  "Mr. "+stdName });
+// let lowerCaseStudents= students.map((stud)=>{   return stud.toUpperCase() });
+
+// // console.log(respectedStudents)
 // console.log(lowerCaseStudents)
+// console.log(students)
 
 //includes returns true or falsse
 
 //filter
 // let filteredStudents=students.filter(
-//     (student)=>{
-//         if(student.includes("A")){
-//             return student;
+//     (name)=>{
+//         if ( name.includes("H") || name.includes("h")) {
+//             return name;
 //         }
+
+
 //     }
 // )
 // console.log(filteredStudents)
@@ -577,19 +603,65 @@ console.log(students[i])
 //reverse
 //join
 //split
+
+
+// Create an array of different animals with their classes.
+//  (Lizard - Reptiles)
+//  (Shark - Pisces)
+//  (Snake - Reptiles)
+//  (Cow - Mammal)
+//  (Frog - Amphibian)
+//  (Lion - Mammal)
+let animals=["Lizard - Reptiles","Shark - Pisces"]
+//lowercase the main array using map
+// then filter
+// let mammals =
+// let reptiles =
+
+
+
+
+
 //objects
 
-// let person={
-//     name:"Haris",
-//     age:24,
-//     isPakistani:true,
-//     hobbies:["coding","reading","gaming"],
-//     // address:{
-//     //     city:"Karachi",
-//     //     country:"Pakistan"
-//     // },
+let person=
+{
+    name:"Haris",
+    age:24,
+    isPakistani:true,  
+    hobbies:["coding","reading","gaming"],
+    address:{
+        city:"Karachi",
+        country:"Pakistan",
+        HNo:["R-61","R-62"]
+    },
    
-// }
+}
+
+
+console.log(person)
+
+
+console.log(person.name)
+console.log(person.age)
+console.log(person.hobbies[1])
+console.log(person.address.country)
+console.log(person.address.HNo[1])
+
+
+
+
+let employees = [
+
+
+    {
+
+        
+    },
+    {},
+    {}
+]
+
 // person.hobbies[1]="writing";
 // console.log(person.hobbies[1]);
 // // console.log(person.address.country);//. notation
