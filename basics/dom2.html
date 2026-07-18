@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>     
+
+</head>
+<style>
+
+
+
+    .about{
+
+    background:red;
+}
+
+
+   .gallery{
+
+    background:rgb(123, 255, 0);
+}
+
+   .gallery1{
+
+    background:rgb(0, 175, 233);
+}
+
+
+
+   .gallery2{
+
+  border: 2px solid green;
+}
+
+
+div{
+    color: blue;
+}
+
+
+
+</style>
+
+
+
+<body>
+    <div id="parent">
+        
+        <div id="gallery"></div>
+        
+        <div class="about"></div>
+        
+    </div>
+
+
+
+
+
+</body>
+
+<script >
+
+let parent = document.querySelector("#parent");
+let gallery = document.querySelector("#gallery");
+let about = document.querySelector(".about");
+console.log(gallery)
+
+gallery.innerHTML ="<h1>This is Gallery</h1>"
+about.innerHTML ="<h1>This is About</h1>"
+
+// gallery.setAttribute("class","gallery")
+
+gallery.classList.add("gallery")
+gallery.classList.add("gallery1")
+gallery.classList.add("gallery2")
+
+about.classList.remove("about")
+about.classList.add("gallery")
+
+about.setAttribute("id","about")
+console.log(gallery.getAttribute("class"))
+
+
+let newDiv = document.createElement('div');
+newDiv.innerHTML="<h1>New Div</h1>";
+newDiv.classList.add("gallery")
+newDiv.classList.add("gallery2")
+
+// parent.prepend(newDiv);
+parent.append(newDiv);
+
+
+
+</script>
+</html>
