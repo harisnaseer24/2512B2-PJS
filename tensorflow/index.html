@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.5.0/dist/tf.min.js"></script>
+
+<script>
+    // Import TensorFlow.js first
+const model = tf.sequential();
+
+// Add a single dense layer
+model.add(tf.layers.dense({ units: 1, inputShape: [1] }));
+
+// Compile the model
+model.compile({
+ optimizer: 'sgd',
+ loss: 'meanSquaredError'
+});
+
+// Training data
+const xs = tf.tensor1d([1, 2, 3, 4, 7]);  // inputs/features
+const ys = tf.tensor1d([2, 4, 6, 8,14]);  // label/ target
+
+// Train the model
+async function train() {
+ await model.fit(xs, ys, { epochs: 500 });
+ const output = model.predict(tf.tensor1d([4]));
+ output.print(); // predicted value
+}
+
+train();
+
+</script>
+</html>
